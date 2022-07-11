@@ -3,6 +3,9 @@
 /* Propriétés générales */
 
 /* Header */
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
 
 /* Main - Accueil */
 /* Section 1 Présentation de l'oeuvre */
@@ -11,7 +14,7 @@
 
 /* Section 3 Présentation des acteurs */
 
-/* Section 4 Scènes ? */
+/* Section 4 Faits */
 
 
 /* Main - Tournage */
@@ -23,3 +26,15 @@
 
 /* Footer */
 
+/* Media queries */
+@media screen and (min-width: 1200px) {
+    /*body {
+        background-color: red;
+    }*/
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  /*  body {
+        background-color: red;
+    }*/
+}
