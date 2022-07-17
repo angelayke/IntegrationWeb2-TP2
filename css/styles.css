@@ -10868,21 +10868,65 @@ textarea.form-control-lg {
   }
 }
 /* Propriétés générales */
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Cormorant SC", serif;
+}
+
+hr {
+  border: 2px solid #fca311;
+}
+
 /* Header */
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
 
 /* Main - Accueil */
+section {
+  margin: 5rem 0;
+}
+
 /* Section 1 Présentation de l'oeuvre */
 /* Section 2 Images et Extraits */
 /* Section 3 Présentation des acteurs */
+i {
+  color: #14213D;
+}
+
 /* Section 4 Faits */
 /* Main - Tournage */
 /* Section 1 Faits divers */
 /* Section 2 Photos du tournage */
 /* Section 3 Présentation de la direction artistique */
 /* Footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem 0;
+}
+footer i {
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fca311;
+}
+footer p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.d-flex {
+  align-items: flex-end;
+}
+
 /* Media queries */
 @media screen and (min-width: 1200px) {
   /*body {

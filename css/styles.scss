@@ -1,6 +1,17 @@
 @import "../bootstrap/scss/bootstrap";
 
 /* Propriétés générales */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant SC', serif;
+}
+
+hr {
+  border: 2px solid #fca311;
+}
 
 /* Header */
 .navbar-expand-lg .navbar-collapse {
@@ -8,11 +19,17 @@
 }
 
 /* Main - Accueil */
+section {
+    margin: 5rem 0;
+}
 /* Section 1 Présentation de l'oeuvre */
 
 /* Section 2 Images et Extraits */
 
 /* Section 3 Présentation des acteurs */
+i {
+    color: #14213D;
+}
 
 /* Section 4 Faits */
 
@@ -25,6 +42,32 @@
 /* Section 3 Présentation de la direction artistique */
 
 /* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem 0;
+
+    & i {
+        color: #ffffff;
+    }
+
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+            color: #fca311;
+        }
+    }
+
+    p {
+        margin-block-end: 0;
+    }
+}
+
+.d-flex {
+    align-items: flex-end;
+}
 
 /* Media queries */
 @media screen and (min-width: 1200px) {
