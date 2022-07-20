@@ -10898,9 +10898,10 @@ hr {
   --bs-navbar-hover-color: #fca311;
 }
 
-/*.fa-solid {
-    color: #ffffff;
-}*/
+.fa-solid {
+  color: #ffffff;
+}
+
 /* Main - Accueil */
 section {
   margin: 3rem 0;
