@@ -10910,10 +10910,9 @@ section {
 
 /* Section 1 Présentation de l'oeuvre */
 /* Section 2 Images et Extraits */
-.video {
-  margin: 2rem 0;
-}
-
+/* .video{
+ margin: 2rem 0;
+ }*/
 /* Section 3 Présentation des acteurs */
 .card {
   height: 100%;
