@@ -1,9 +1,17 @@
 @import "../bootstrap/scss/bootstrap";
 
+/* Variables */
+$noir: #000000;
+$bleu-fonce: #14213D;
+$jaune: #fca311;
+$bleu-clair: #e5e5e5;
+$blanc: #ffffff;
+
+
 /* Propriétés générales */
 body {
     font-family: 'Josefin Sans', sans-serif;
-    color: #14213D;
+    color: $bleu-fonce;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,16 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #14213D;
+    color: $bleu-fonce;
     text-decoration: none;
 
     &:hover {
-        color: #fca311;
+        color: $jaune;
     }
 }
 
 hr {
-  border: 2px solid #fca311;
+  border: 2px solid $jaune;
 }
 
 /* Header */
@@ -29,11 +37,11 @@ hr {
 }
 
 .navbar-dark {
-    --bs-navbar-hover-color: #fca311;
+    --bs-navbar-hover-color: $jaune;
 }
 
 .bg--color {
-    background-color: #e5e5e5;
+    background-color: $bleu-clair;
     padding: 2rem 0;
 }
 
@@ -41,12 +49,25 @@ hr {
 section {
     padding: 3rem 0;
 }
+
+
+/* ============= NOTE POUR LAURENT  =============
+j'ai délibérement laissé des commentaires vides, je ne les considere pas comme code mort pour le devoir
+car je veux que tu vois que j'ai bien construit mon code, et que je n'ai pas eu a utiliser de css pour ces parties-là */ 
+
 /* Section 1 Présentation de l'oeuvre */
 
 /* Section 2 Images et Extraits */
-   /* .video{
-    margin: 2rem 0;
-    }*/
+#section2 .video{
+    width: 100%;
+    height: 100%;
+}
+
+.ratio-16x9 {
+    @include media-breakpoint-up(md) {
+      --bs-aspect-ratio: 50%; // 2x1
+    }
+  }
 
 /* Section 3 Présentation des acteurs */
 .card {
@@ -71,20 +92,20 @@ i {
 
 /* Footer */
 footer {
-    background-color: #000000;
-    color: #fff;
+    background-color: $noir;
+    color: $blanc;
     padding: 2rem 0;
 
     & i {
-        color: #ffffff;
+        color: $blanc;
     }
 
     & a {
-        color: #ffffff;
+        color: $blanc;
         text-decoration: none;
 
         &:hover {
-            color: #fca311;
+            color: $jaune;
         }
     }
 
@@ -98,14 +119,15 @@ footer {
 }
 
 /* Media queries */
-@media screen and (min-width: 1200px) {
-    /*body {
-        background-color: red;
-    }*/
+/*@media screen and (min-width: 1200px) {
 }
 
-@media screen and (min-width: 960px) and (max-width: 1200px) {
-  /*  body {
-        background-color: red;
-    }*/
-}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+}*/
+
+@media screen and (max-width: 768px) {
+      #section2 #video{
+         display: none;
+         visibility: hidden;
+      }
+  }
